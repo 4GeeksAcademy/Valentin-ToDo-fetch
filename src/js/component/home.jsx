@@ -34,22 +34,24 @@ const Home = () => {
         onKeyUp={handleAdd}
       />
       <button onClick={handleAdd}>Add</button>
-      <ul>
-        {todo.length === 0 ? (
-          <li>No tasks. Add tasks, lazy!</li>
-        ) : (
-          todo.map((task, index) => (
-            <li key={index}>
-              {task}{" "}
-              <button onClick={() => handleDelete(index)}>
-                {" "}
-                {/* <FontAwesomeIcon icon={faTrash} />{" "} */}
-              </button>
-            </li>
-          ))
-        )}
-        <span>{todo.length} tasks</span>
-      </ul>
+      <div className="list">
+        <ul>
+          {todo.length === 0 ? (
+            <li>No tasks. Add tasks, lazy!</li>
+          ) : (
+            todo.map((task, index) => (
+              <li key={index}>
+                {task}{" "}
+                <button onClick={() => handleDelete(index)}>
+                  {" "}
+                  <FontAwesomeIcon icon={faTrash} />{" "}
+                </button>
+              </li>
+            ))
+          )}
+          <span>{todo.length} tasks</span>
+        </ul>
+      </div>
     </div>
   );
 };

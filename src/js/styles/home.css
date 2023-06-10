@@ -5,13 +5,14 @@
 }
 
 body {
-  background: linear-gradient(110deg, #777, #555, #333);
+  background: linear-gradient(45deg, #000, #222);
   height: 100vh;
 }
 .main {
   width: 350px;
   border: 2px solid goldenrod;
   margin: 2rem auto;
+  background: rgb(69, 117, 130);
 }
 
 h1 {
@@ -23,15 +24,20 @@ input {
   width: 100%;
 }
 
+ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 li {
   list-style: none;
   border: 2px solid goldenrod;
-  color: #000;
-  background: rgb(69, 117, 130);
-  font-weight: 600;
+  color: blanchedalmond;
+  background: #111;
   width: 100%;
+  font-weight: 600;
 }
-
 
 span {
   font-weight: 500;
