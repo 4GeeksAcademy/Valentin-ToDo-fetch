@@ -1,0 +1,38 @@
+h1 {
+  color: #000;
+  font-weight: 600;
+  font-size: 5rem;
+}
+
+input {
+  width: 80%;
+  background: rgba(78, 90, 92, 0.7);
+  border: 1px solid #fff;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+input:hover,
+input:focus {
+  width: 80%;
+  background: rgba(208, 238, 245, 0.8);
+  border: 1px solid #000;
+  margin-bottom: 15px;
+}
+.btn-add {
+  background: rgba(78, 90, 92, 0.7);
+  width: 20%;
+  font-size: 1.5rem;
+  border: 1px solid #fff;
+  color: #000;
+  font-weight: 700;
+}
+.btn-add:hover {
+  background: rgba(208, 238, 245, 0.8);
+  width: 20%;
+  border: 1px solid #000;
+  color: #fff;
+  font-weight: 700;
+}
