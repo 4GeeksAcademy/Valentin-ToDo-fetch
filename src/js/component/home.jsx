@@ -33,7 +33,9 @@ const Home = () => {
         onChange={(e) => setinputValue(e.target.value)}
         onKeyUp={handleAdd}
       />
-      <button onClick={handleAdd}>Add</button>
+      <button className="btn-add" onClick={handleAdd}>
+        Add
+      </button>
       <div className="list">
         <ul>
           {todo.length === 0 ? (
@@ -41,15 +43,16 @@ const Home = () => {
           ) : (
             todo.map((task, index) => (
               <li key={index}>
-                {task}{" "}
-                <button onClick={() => handleDelete(index)}>
-                  {" "}
-                  <FontAwesomeIcon icon={faTrash} />{" "}
-                </button>
+                <span className="tasks-added"> {task} </span>
+                <FontAwesomeIcon
+                  className="trash"
+                  onClick={() => handleDelete(index)}
+                  icon={faTrash}
+                />{" "}
               </li>
             ))
           )}
-          <span>{todo.length} tasks</span>
+          <span className="num-tasks">{todo.length} tasks</span>
         </ul>
       </div>
     </div>
