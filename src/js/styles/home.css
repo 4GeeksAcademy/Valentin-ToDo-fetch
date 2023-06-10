@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(110deg, #777, #555, #333);
+  height: 100vh;
+}
+.main {
+  width: 350px;
+  border: 2px solid goldenrod;
+  margin: 2rem auto;
+}
+
+h1 {
+  color: #000;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  border: 2px solid goldenrod;
+  color: #000;
+  background: rgb(69, 117, 130);
+  font-weight: 600;
+  width: 100%;
+}
+
+
+span {
+  font-weight: 500;
+  color: goldenrod;
+}
