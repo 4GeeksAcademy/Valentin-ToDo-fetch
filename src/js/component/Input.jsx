@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Input = ({ todo, setTodo }) => {
+const Input = ({ onAdd }) => {
   const [inputValue, setinputValue] = useState("");
 
   const handleAdd = (e) => {
@@ -8,10 +8,11 @@ const Input = ({ todo, setTodo }) => {
       (e.key === "Enter" && inputValue.trim() !== "") ||
       (e.type === "click" && inputValue.trim() !== "")
     ) {
-      setTodo([...todo, inputValue]);
+      onAdd(inputValue);
       setinputValue("");
     }
   };
+
   return (
     <>
       <h1>ToDo List</h1>

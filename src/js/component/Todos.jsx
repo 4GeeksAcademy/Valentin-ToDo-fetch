@@ -23,8 +23,7 @@ const Todo = ({ todo, setTodo }) => {
           </li>
         ))
       )}
-        <span className="num-tasks">{todo.length} tasks</span>
-
+      <span className="num-tasks">{todo.length} tasks</span>
     </>
   );
 };
